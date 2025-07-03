@@ -6,7 +6,7 @@ import DynamicBackground from '@/components/DynamicBackground';
 
 const Index = () => {
   const handleApplyNow = () => {
-    window.open('https://your-typeform-url-here', '_blank');
+    window.open('https://form.typeform.com/to/aA1dieHD', '_blank');
   };
 
   return (
