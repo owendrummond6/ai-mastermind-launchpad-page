@@ -93,6 +93,14 @@ This is a full-stack web application for an AI Agency landing page built with a 
 # Changelog
 
 - July 03, 2025. Initial setup
+- July 03, 2025. Successfully migrated from Lovable to Replit environment
+  - Migrated routing from react-router-dom to wouter for Replit compatibility
+  - Added custom theme provider replacing next-themes dependency
+  - Set up proper query client configuration for TanStack Query
+  - Installed missing dependencies (sonner, react-router-dom)
+  - Added custom animations (fade-in, spin-slow) for landing page effects
+  - Fixed Inter font configuration in Tailwind CSS
+  - Removed console error logging from NotFound component
 
 # User Preferences
 
