@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import DynamicBackground from '@/components/DynamicBackground';
 
 const Index = () => {
   const handleApplyNow = () => {
@@ -9,7 +10,8 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-inter overflow-hidden relative">
+    <div className="min-h-screen text-white font-inter overflow-x-hidden relative">
+      <DynamicBackground />
       {/* Fixed CTA Button */}
       <div className="fixed top-6 right-6 z-50">
         <Button 
@@ -21,16 +23,16 @@ const Index = () => {
       </div>
 
       {/* Animated Background Elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/3 rounded-full animate-pulse"></div>
-        <div className="absolute top-40 right-20 w-32 h-32 bg-red-400/2 rounded-full animate-bounce delay-100"></div>
-        <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-red-600/3 rounded-full animate-pulse delay-200"></div>
-        <div className="absolute bottom-20 right-10 w-20 h-20 bg-red-500/2 rounded-full animate-bounce delay-300"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-red-500/2 to-red-700/2 rounded-full animate-spin-slow"></div>
+      <div className="fixed inset-0 overflow-hidden pointer-events-none z-10">
+        <div className="absolute top-20 left-10 w-64 h-64 bg-red-500/5 rounded-full animate-pulse"></div>
+        <div className="absolute top-40 right-20 w-32 h-32 bg-red-400/3 rounded-full animate-bounce delay-100"></div>
+        <div className="absolute bottom-32 left-1/4 w-48 h-48 bg-red-600/4 rounded-full animate-pulse delay-200"></div>
+        <div className="absolute bottom-20 right-10 w-20 h-20 bg-red-500/3 rounded-full animate-bounce delay-300"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-red-500/3 to-red-700/3 rounded-full animate-spin-slow"></div>
       </div>
 
       {/* Hero Section */}
-      <section className="relative z-10 container mx-auto px-4 pt-20 pb-8 text-center border-b border-black">
+      <section className="relative z-20 container mx-auto px-4 pt-20 pb-8 text-center border-b border-gray-800/30">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Build Your AI Agency to
@@ -52,7 +54,7 @@ const Index = () => {
       </section>
 
       {/* VSL Section */}
-      <section className="relative z-10 container mx-auto px-4 py-16 border-b border-black">
+      <section className="relative z-20 container mx-auto px-4 py-16 border-b border-gray-800/30">
         <div className="max-w-5xl mx-auto animate-fade-in">
           <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
             <iframe
@@ -76,7 +78,7 @@ const Index = () => {
       </section>
 
       {/* Video Testimonials Section */}
-      <section className="relative z-10 py-20 border-b border-black">
+      <section className="relative z-20 py-20 border-b border-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
@@ -113,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* Student Results Collage Section */}
-      <section className="relative z-10 py-20 border-b border-black">
+      <section className="relative z-20 py-20 border-b border-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 animate-fade-in">
@@ -227,7 +229,7 @@ const Index = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative z-10 py-20 border-b border-black">
+      <section className="relative z-20 py-20 border-b border-gray-800/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-8 animate-fade-in">
@@ -256,7 +258,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 py-8">
+      <footer className="relative z-20 py-8">
         <div className="container mx-auto px-4">
           <p className="text-gray-400 text-sm text-left ml-8">
             © 2025 AI Agency Mastermind. All rights reserved.
