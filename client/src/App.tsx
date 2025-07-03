@@ -17,7 +17,6 @@ const App = () => (
         <Router>
           <Route path="/" component={Index} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" component={NotFound} />
         </Router>
       </TooltipProvider>
     </ThemeProvider>
